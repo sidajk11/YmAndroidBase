@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YmSampleXML</string>
+    <string name="app_hint_username">"username"</string>>
+    <string name="app_hint_password">"password"</string>>
+    <string name="app_btn_login">"Login"</string>>
+    <string name="app_btn_signUp">"SignUp"</string>>
+</resources>
