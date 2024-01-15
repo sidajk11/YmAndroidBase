@@ -26,9 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnSignUp.setOnClickListener {
-            val intent = Intent(this, SubActivity::class.java)
-            intent.putExtra("from1", "Hello Bundle")
-            intent.putExtra("from2", 1234)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
