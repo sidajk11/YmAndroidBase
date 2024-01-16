@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">YmSampleXML</string>
-    <string name="app_hint_username">"username"</string>>
-    <string name="app_hint_password">"password"</string>>
-    <string name="app_btn_login">"Login"</string>>
-    <string name="app_btn_signUp">"SignUp"</string>>
+    <string name="app_hint_username">"username"</string>
+    <string name="app_hint_password">"password"</string>
+    <string name="app_btn_login">"Login"</string>
+    <string name="app_btn_signUp">"SignUp"</string>
+    <string name="app_btn_done">"SignUp"</string>
+    <string name="app_dummy_txt">"xxxx"</string>
+    <string name="app_title_spinner">"Spinner"</string>
+
+    <string name="hint_dummy_txt">"xxxx"</string>
 </resources>

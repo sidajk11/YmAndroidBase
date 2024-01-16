@@ -11,7 +11,7 @@ class SubActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.tvDescA.setText(intent.getStringExtra("from1"))
-        binding.tvDescB.setText("${intent.getIntExtra("from2", 0)}")
+        binding.tvDescA.text = intent.getStringExtra("from1")
+        binding.tvDescB.text = "${intent.getIntExtra("from2", 0)}"
     }
 }
