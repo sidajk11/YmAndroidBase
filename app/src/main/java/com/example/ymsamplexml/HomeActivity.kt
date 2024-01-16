@@ -47,6 +47,11 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, SpinnerActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnRecycler.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 //    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
