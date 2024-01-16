@@ -52,6 +52,11 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, RecyclerActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnPermission.setOnClickListener {
+            val intent = Intent(this, PermissionActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 //    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

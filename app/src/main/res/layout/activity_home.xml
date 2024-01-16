@@ -51,6 +51,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Recycler" />
+
+                    <Button
+                        android:id="@+id/btnPermission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Permission" />
                 </LinearLayout>
 
             </FrameLayout>
