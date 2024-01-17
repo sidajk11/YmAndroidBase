@@ -38,6 +38,10 @@ class PermissionActivity : AppCompatActivity() {
 
     // 권한 요청
     private fun requestPermission() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            return
+        }
+        // 마시멜로 버전 이후
         requestPermissions(arrayOf(Manifest.permission.CAMERA), REQUEST_PERMISSIONS)
     }
 

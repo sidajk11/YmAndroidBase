@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.ymsamplexml.databinding.ActivityMainBinding
-import mu.KotlinLogging
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
@@ -65,21 +64,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.d("Tag", "resultB: $result")
-
-        val logger = KotlinLogging.logger {}
-        val ex = RuntimeException("으앜")
-
-        logger.trace { "hello ${heavyWorld(1)}" } /* heavyWorld() 호출 되지 않음 */
-        logger.debug { "hello ${heavyWorld(2)}" }
-        logger.info { "hello ${heavyWorld(3)}" }
-        logger.error(ex) { "hello ${heavyWorld(4)}" }
-        logger.debug("Test logger")
-
-        logger.trace { "This is trace log" }
-        logger.debug { "This is debug log" }
-        logger.info { "This is info log" }
-        logger.warn { "This is warn log" }
-        logger.error { "This is error log" }
     }
 
     private fun heavyWorld(num: Int): String {

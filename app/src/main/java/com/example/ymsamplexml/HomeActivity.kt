@@ -1,17 +1,15 @@
 package com.example.ymsamplexml
 
 import android.app.Activity
-import android.app.Activity.*
-import android.app.Instrumentation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.ymsamplexml.databinding.ActivityHomeBinding
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : BaseActivity() {
     private val binding by lazy { ActivityHomeBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,6 +54,12 @@ class HomeActivity : AppCompatActivity() {
         binding.btnPermission.setOnClickListener {
             val intent = Intent(this, PermissionActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.btnService.setOnClickListener {
+            val intent = Intent(this, ServiceActivity::class.java)
+            startActivity(intent)
+            Log.d(logTag, "서비스 실행")
         }
     }
 
