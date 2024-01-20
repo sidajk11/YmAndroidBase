@@ -50,6 +50,7 @@ class ServiceActivity : AppCompatActivity() {
                     }
                 })
         }
+        
 
         binding.btnRequestById.setOnClickListener {
             val service = retrofit.create(Service::class.java)
